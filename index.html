@@ -18,9 +18,7 @@
     <div class="sidebar close">
       <div class="logo_details">
         <i class="bx bxl-c-plus-plus"></i>
-        <!-- <i class="bx bxl-tux"></i> -->
         <span class="logo_name">CodingLab</span>
-        <!-- <span class="logo_name">ValourDevelopment</span> -->
       </div>
       <ul class="nav_links">
         <li>
@@ -113,7 +111,42 @@
             <li><a class="link_name" href="#">History</a></li>
           </ul>
         </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-cog"></i>
+            <span class="link_name">Settings</span>
+          </a>
+          <ul class="sub_menu blank">
+            <li><a class="link_name" href="#">Settings</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="profile_details">
+            <div class="profile_content">
+              <img src="images/profile_pic.jpg" alt="head shot" />
+            </div>
+            <div class="name_job">
+              <div class="profile_name">Prem Shahi</div>
+              <div class="job">Web Designer</div>
+              <!-- <div class="profile_name">William Krug</div> -->
+              <!-- <div class="job">Software Developer</div> -->
+            </div>
+            <i class="bx bx-log-out"></i>
+          </div>
+        </li>
       </ul>
     </div>
+
+    <script>
+      let arrow = document.querySelectorAll('.arrow');
+
+      for (let i = 0; i < arrow.length; i++) {
+        arrow[i].addEventListener('click', (e) => {
+          let arrowParent = e.target.parentElement.parentElement;
+          console.log(arrowParent);
+          arrowParent.classList.toggle('showMenu');
+        });
+      }
+    </script>
   </body>
 </html>
