@@ -7,3 +7,34 @@
   box-sizing: border-box;
   font-family: 'Poppins'; sans-serif;
 }
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 260px;
+  background: #11101d;
+}
+
+.sidebar .logo_details {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .logo_details i {
+  font-size: 30px;
+  color: #ffffff;
+  height: 50px;
+  min-width: 78px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.sidebar .logo_details .logo_name {
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: 600;
+}
