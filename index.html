@@ -14,11 +14,14 @@
     <link rel="stylesheet" href="style.css" />
     <title>Drop Down Sidebar Menu</title>
   </head>
+
   <body>
-    <div class="sidebar close">
+    <div class="sidebar">
       <div class="logo_details">
-        <i class="bx bxl-c-plus-plus"></i>
-        <span class="logo_name">CodingLab</span>
+        <!-- <i class="bx bxl-c-plus-plus"></i> -->
+        <!-- <span class="logo_name">CodingLab</span> -->
+        <i class="bx bx-code-alt"></i>
+        <span class="logo_name">ValourCode</span>
       </div>
       <ul class="nav_links">
         <li>
@@ -126,10 +129,8 @@
               <img src="images/profile_pic.jpg" alt="head shot" />
             </div>
             <div class="name_job">
-              <div class="profile_name">Prem Shahi</div>
-              <div class="job">Web Designer</div>
-              <!-- <div class="profile_name">William Krug</div> -->
-              <!-- <div class="job">Software Developer</div> -->
+              <div class="profile_name">William Krug</div>
+              <div class="job">Software Developer</div>
             </div>
             <i class="bx bx-log-out"></i>
           </div>
@@ -137,16 +138,29 @@
       </ul>
     </div>
 
+    <section class="home_section">
+      <div class="home_content">
+        <i class="bx bx-menu"></i>
+        <span class="text">Drop Down Sidebar</span>
+      </div>
+    </section>
+
     <script>
       let arrow = document.querySelectorAll('.arrow');
 
       for (let i = 0; i < arrow.length; i++) {
         arrow[i].addEventListener('click', (e) => {
           let arrowParent = e.target.parentElement.parentElement;
-          console.log(arrowParent);
           arrowParent.classList.toggle('showMenu');
         });
       }
+
+      let sidebar = document.querySelector('.sidebar');
+      let sidebarBtn = document.querySelector('.bx-menu');
+      sidebarBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('close');
+      });
+      console.log(sidebarBtn);
     </script>
   </body>
 </html>
