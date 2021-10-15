@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins'; sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .sidebar {
@@ -32,7 +32,7 @@
 
 .sidebar .logo_details i {
   font-size: 30px;
-  color: #ffffff;
+  color: #FFFFFF;
   height: 50px;
   min-width: 78px;
   text-align: center;
@@ -41,7 +41,7 @@
 
 .sidebar .logo_details .logo_name {
   font-size: 22px;
-  color: #ffffff;
+  color: #FFFFFF;
   font-weight: 600;
   transition: 0.3s ease;
   transition-delay: 0.1s;
@@ -55,7 +55,7 @@
 
 .sidebar .nav_links {
   height: 100%;
-  padding: 30px 0 15px 0;
+  padding: 30px 0 150px 0;
   overflow: auto;
 }
 
@@ -74,7 +74,7 @@
 }
 
 .sidebar .nav_links li:hover {
-  background: #1d1b31;
+  background: #1D1B31;
 }
 
 .sidebar .nav_links li .icon_link {
@@ -92,7 +92,7 @@
   min-width: 78px;
   text-align: center;
   line-height: 50px;
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -115,7 +115,7 @@
 .sidebar .nav_links li a .link_name {
   font-size: 18px;
   font-weight: 400;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .sidebar.close .nav_links li a .link_name {
@@ -126,7 +126,7 @@
 .sidebar .nav_links li .sub_menu {
   padding: 6px 6px 14px 80px;
   margin-top: -10px;
-  background: #1d1b31;
+  background: #1D1B31;
   display: none;
 }
 
@@ -135,7 +135,7 @@
 }
 
 .sidebar .nav_links li .sub_menu a {
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 15px;
   padding: 5px 0;
   white-space: nowrap;
@@ -199,7 +199,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #1d1b31;
+  background: #1D1B31;
   padding: 6px 0;
   transition: all 0.5s ease;
 }
@@ -220,7 +220,7 @@
   object-fit: cover;
   border-radius: 16px;
   margin: 0 14px 0 12px;
-  background: #1d1b31;
+  background: #1D1B31;
   transition: all 0.5s ease;
 }
 
@@ -230,7 +230,7 @@
 
 .sidebar .profile_details .profile_name,
 .sidebar .profile_details .job {
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 18px;
   font-weight: 500;
   white-space: nowrap;
